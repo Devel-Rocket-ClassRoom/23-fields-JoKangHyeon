@@ -1,13 +1,13 @@
 using System;
 
-ScoreTracker scoreTracker = new ScoreTracker("수학");
-scoreTracker.ShowScore();
-
+ScoreTracker math = new ScoreTracker("수학");
+math.ShowScore();
 Console.WriteLine();
-scoreTracker.SetScore(85);
-scoreTracker.AddBonus(10);
-scoreTracker.AddBonus(20);
-scoreTracker.SetScore(120);
 
+math.SetScore(85);
+math.AddBonus(10);
+math.AddBonus(20);
+math.SetScore(-10);
 Console.WriteLine();
-scoreTracker.ShowScore();
+
+math.ShowScore();
